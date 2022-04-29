@@ -42,8 +42,7 @@ public class UserRegistrtionDataGenerator {
     }
 
     public static UserRegistrationData generateValidActive() {
-        UserRegistrationData userData = new UserRegistrationData(faker.name().username(),
-                faker.internet().password(true), activeStatus);
+        UserRegistrationData userData = new UserRegistrationData(faker.name().username(), faker.internet().password(true), activeStatus);
         registrationUsers(userData);
         return userData;
     }
